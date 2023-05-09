@@ -21,4 +21,4 @@ const insertPokemonIntoHtml = pokemons => document.querySelector("[data-js='poke
 
 Promise.all(pokemonPromisses)
     .then(generateHtml)
-    .then(insertPokemonIntoHtml)   
+    .then(insertPokemonIntoHtml)  
