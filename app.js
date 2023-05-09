@@ -7,8 +7,9 @@ const pokemonPromisses = generatePokemonPromisses()
 
 const generateHtml = pokemons => pokemons.reduce((acc, { name , id, types }) => {
     const typesPokemon = types.map(typeInfo => typeInfo.type.name)
+    console.log(types[0].type.name)
     acc += `
- <li class="card ${types[0]}"> 
+ <li class="card ${types[0].type.name}"> 
     <img class="card-image ${types[0]}" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png" alt="${name}" />
      <h2 class="card-title">${id}.${name}</h2>
      <p class="card-subtitle">${typesPokemon.join(" | ")}</p>
