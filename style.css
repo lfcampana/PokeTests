@@ -100,6 +100,21 @@ h1 {
 .fighting {
 	background-color: #E6E0D4;
 }
+.ghost{
+	background-color: #3d3d33;
+	color: #fff;
+}
+.ghost p{
+	color: #fff;
+}
+
+.dark{
+	background-color: #222;
+	color:#fff
+}
+.dark p {
+	color: #fff;
+}
 
 .normal {
 	background-color: #F5F5F5;
@@ -107,6 +122,9 @@ h1 {
 
 .card:hover {
 	animation: bounce 0.5s linear;
+}
+h1{
+	color: #666;
 }
 
 .card-title {
@@ -128,6 +146,7 @@ h1 {
 
 .card-image {
 	height: 180px;
+	max-width: 180px;
 	position: relative;
 	z-index: 2;
 }
